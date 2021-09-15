@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginActivity">
         <activity
+            android:name=".ResolutionAcivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterIntent"
             android:exported="true" />
         <activity

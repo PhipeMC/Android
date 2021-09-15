@@ -116,4 +116,16 @@
         app:layout_constraintTop_toBottomOf="@+id/lblForgot"
         app:layout_constraintVertical_bias="0.265" />
 
+    <Button
+        android:id="@+id/btnResolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resolutions"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLink"
+        app:layout_constraintVertical_bias="0.827" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

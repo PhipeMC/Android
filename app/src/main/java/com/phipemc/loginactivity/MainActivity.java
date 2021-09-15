@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txtUserPassword;
     Button btnLogin;
     TextView txtLink;
+    Button btnRes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         txtUser = findViewById(R.id.txtUser);
         txtUserPassword = findViewById(R.id.txtUserPassword);
         txtLink = findViewById(R.id.txtLink);
+        btnRes = findViewById(R.id.btnResolution);
 
         Bundle parametros = this.getIntent().getExtras();
         if(parametros !=null){
@@ -40,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, RegisterIntent.class));
+            }
+        });
+
+        btnRes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ResolutionAcivity.class));
             }
         });
 
